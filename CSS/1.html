@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS types & Selectors</title>
+    <style>
+        body{
+            background-color: rgba(0, 0, 0, 0.497);
+        }
+        /* Element Selector */
+        div{
+            color: rgb(4, 5, 7);
+        }
+        /* Class Selector */
+        .d{
+            color: aqua;
+        }
+        /* Id Selector */
+        #a{
+            color: bisque;
+        }
+        /* Child Selector */
+        div > p{
+            background-color: aliceblue;
+        }
+        /* Decendent Selector */
+        div p{
+            color: blue;
+        }
+        /* Universal Selector */
+        *{
+            margin: 1;
+            padding: 0;
+        }
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+
+        a:link{
+            color: yellowgreen;
+        }
+        
+        a:active{
+            background-color: lightsalmon;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+
+    </style>
+    <link rel="stylesheet" href="1.css">
+</head> 
+<body>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, aliquam deserunt aperiam asperiores ad vel maiores adipisci. Velit temporibus quas reprehenderit ut. Placeat facere dignissimos quos quaerat! Nam quas laboriosam reprehenderit natus voluptas officiis tempore, delectus quis incidunt deserunt consequatur.
+        <p>I am para inside Div</p>
+        <span>
+            <p>I am inside span and span is in div</p>
+        </span>
+    </div>
+
+    <span style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, voluptatibus.
+    </span>
+
+    <h1>HELLO WORLD</h1>
+    <li>Inline</li>
+    <li>External</li>
+    <li>Internal</li>
+
+    <p class="d">Hello</p>
+    <p id="a">Hi</p>
+
+    <a href="https://www.google.com">Go to Google</a> <br>
+    <a href="https://www.facebook.com">Go to facebook</a> <br>
+    <a href="https://www.youtube.com">Go to youtube</a>
+
+</body>
+</html>
