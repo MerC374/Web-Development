@@ -4,8 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Css Specificity</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+        
+        /* The specificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+        
+        /* The specificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+
+        /* This is an example of attriubute selector. The specificity of this selector is 10 */
+        [data-x=a]{
+            background-color: rgba(181, 93, 93, 0.713);
+            color: blanchedalmond;
+        }
+        
+        /* The specificity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+        
+        /* The specificity of this selector is 1+10 = 11 */
+        h1.yellow{
+            color: blueviolet; 
+        }
+
+    </style>
 </head>
 <body>
-    
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">
+            CSS Specifity
+        </h1>
+        <p>
+            <ul>
+                <li>Universal selector : 0</li>
+                <li>Element selector and pseudo-elements : 1</li>
+                <li>Class selector, attribute selector and pseudo classes : 10</li>
+                <li>Id selector : 100</li>
+                <li>Inline styles : 1000</li>
+                <li>Inline styles with !important : add 10000 more</li>
+            </ul>
+        </p>
+    </div>
 </body>
 </html>

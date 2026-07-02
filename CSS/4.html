@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aquamarine;
+            width: 80vw;
+            margin: auto;
+            height: 10vh;
+            
+        }
+
+        .container{
+            border: 2px solid black;
+            box-sizing: border-box;
+            background-color: aquamarine;
+            width: 80vw;
+            margin: 30px auto;
+            /* height: 80vh; */
+            min-height: 80vh;
+            font-size: 10px;
+        }
+
+        .container p{
+            font-size: 2em; /* Container se inherit karke milega 10px then uska 2 times, i.e 10px ka 2 = 20px */
+            /* And rem is the related to the root value, by default root value is 16px so 2rem = 2*16 = 32px */
+            border: 1px red solid;
+            width: 50%;
+            margin: 10px;
+        }
+
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            width: 80vw;
+            margin: 20px auto;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box.
+    </div>
+    
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi quidem ratione quae vero repellendus. Id, voluptatem! Iusto perspiciatis dicta facere consequuntur maxime odit ea fugiat sit tempore. Soluta quos, magnam culpa corporis minima sint veritatis sequi quisquam mollitia, necessitatibus porro nostrum at eveniet dolore architecto eius suscipit exercitationem veniam quis.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, assumenda, voluptas necessitatibus molestiae doloremque repudiandae omnis dicta et id ipsum earum, sit autem dolorem consequatur! Cupiditate ullam qui eos pariatur et obcaecati quia suscipit, facilis ducimus, dicta dolores reiciendis in rem commodi at earum. Molestiae vitae omnis mollitia odit sed nostrum dolor modi eaque veniam exercitationem, possimus velit unde, vel optio obcaecati maxime illo delectus deserunt autem illum saepe placeat. Sunt voluptatem explicabo quibusdam qui ipsum quae mollitia culpa nostrum, non dolor vero fugiat quo id autem. Expedita temporibus dolores cupiditate maiores ducimus aperiam veniam, inventore minus delectus nobis accusamus magni dolor eaque, libero eveniet nihil dolore voluptatem, consectetur laudantium numquam recusandae ipsum nemo porro! Laboriosam inventore vel perferendis doloribus itaque in nesciunt dolores deserunt, sed voluptas quos voluptatem quis recusandae odit tempore illum sapiente quaerat consectetur fuga ullam consequuntur? Eius, modi corrupti delectus sint cupiditate incidunt architecto perspiciatis ducimus recusandae aliquam nostrum ab sequi iusto at a, repellendus voluptas numquam ad! Unde iure error amet ullam tempora accusamus nemo atque repellat. Nihil dolore, velit deserunt rem ullam suscipit unde. Esse cum cumque similique nisi quasi repellendus id, perspiciatis ad repudiandae minima minus temporibus, quos consequatur cupiditate iste aliquid. Incidunt?</p>
+    </div>
+
+    <div class="mycont">This is the footer div</div>
+</body>
+</html>
