@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS overflow</title>
+    <title>CSS overflow & Position property</title>
     <style>
         .box{
             border: 1px solid black;
@@ -13,11 +13,54 @@
             /* white-space: nowrap;
             text-overflow: ellipsis; It will hide the overflow text(irl the overflow text got invisible ) */
         }
+        .parent{
+            padding: 40px;
+            margin: 30px;
+            border: 2px solid purple;
+            height: 180vh;
+            width: 80vw;
+            /* position: absolute; if parent is absolute so the box 1 is assign according to the parent box*/ 
+        }
+        .boxer{
+            height: 100px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            border: 1px solid black;
+        }
+        .box1{
+            background-color: aqua;
+            position: absolute;
+            top: 4px;
+            right: 10px;
+        }
+        .box2{
+            background-color: antiquewhite;
+            /* position: relative;
+            top: 30px;
+            left: 20px; */
+        }
+        .box3{
+            background-color: azure;
+            position: sticky;
+            top: 0px; /* It is now sticky it means when i scroll the page then box3 gets stick to the page. */
+        }
+        .box4{
+            background-color: purple;
+            position: fixed; /* It is now fixed. */
+        }
+        
     </style>
 </head>
 <body>
     <div class="box">
         hello i am a box and i love Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam ratione eos, et vero eaque iste quis! Alias, facere tempora architecto excepturi laborum natus illum minus beatae quaerat itaque soluta voluptates, iure vero obcaecati earum ipsum odit qui quibusdam consequatur cupiditate rerum nobis accusamus dolore nemo! Ex nisi non nostrum obcaecati?
+    </div>
+    <div class="parent">
+        <div class="boxer box1"></div>
+        <div class="boxer box2"></div>
+        <div class="boxer box3"></div>
+        <div class="boxer box4"></div>
     </div>
 </body>
 </html>
