@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Properties & Box shadows</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 30px;
+            width: 200px;
+            margin: 10px;
+        }
+        .sp{
+            border: 2px solid red;
+        }
+        .box1{
+            /* display: none; */ /* Here display gets none and space get empty and will fill by other things. */
+            visibility: hidden; /* Here the visiblity of the box is 0 but the box is there */
+        }
+        .shad{
+            border: 2px solid cyan;
+            /* h-offset v-offset blur spread color */
+            box-shadow: 8px 10px 20px rgb(26, 158, 158);
+            margin: 10px;
+            height: 30px;
+            padding: 10px;
+        }
+        .text-shad{
+            margin: 30px;
+            text-shadow: 5px 6px 10px rgb(170, 106, 23); 
+            border: 1px solid blue;
+            /* Outline is outer side of border and its offset can change but border can't and outline does occupy the outer area but border occupies the box area. Outline follows the border-radius of the border. */
+            outline: 2px solid black; 
+            outline-offset: 8px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">
+        I am a div box and i am a block element.
+    </div>
+    <div class="box">
+        Also a nice box
+    </div>
+    <span class="sp">
+        I am box of span.
+    </span>
+
+    <div class="shad">
+        Hello i am a div box. I have a shadow of my box.
+    </div>
+    <p class="text-shad">I am the text of the paragraph which has its own shadow.</p>
+</body>
+</html>
