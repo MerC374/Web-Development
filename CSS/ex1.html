@@ -5,11 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 1</title>
     <style>
-        
+        p{
+            background-color: blue;
+            color: white;
+        }
+        div p:first-child{
+            background-color: yellow;
+            color: red;
+        }
+        body div:nth-child(1){
+            border: 3px solid black;
+            border-radius: 20px;
+        }
+        body div:nth-child(2){
+            border: 2px solid rgb(246, 7, 7);
+            border-radius: 20px;
+        }
     </style>
 </head>
 <body>
-    <!-- Write a css amd html code to style a paragraph inside a div which contains 5 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have bg color blue and text color white. The Html is written below for your reference. Do not change the Html. -->
+    <!-- Write a css amd html code to style a paragraph inside a div which contains 3 other paragraphs. The first paragraph must have background color yellow and text color red. The other paragraphs must have bg color blue and text color white. The Html is written below for your reference. Do not change the Html. -->
     <body>
         <div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt commodi, ex illo aliquam velit assumenda iure id quo eum dignissimos vitae quas iste voluptates itaque cupiditate doloremque perferendis atque sint ut deserunt eaque harum praesentium! Eos dolor minus aperiam impedit!</p>
