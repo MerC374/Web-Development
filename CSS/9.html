@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media</title>
+    <style>
+        body{
+            background-color: rgba(30, 255, 0, 0.464);
+        }
+
+        @media only screen and (max-width: 455px){
+            body{
+                background-color: blue;
+            }
+            .boxes{
+                flex-direction: column;
+            }
+        }
+        /* SYNTAX OF MEDIA QUERY */
+        /* @media not|only mediatype and (expression){
+            CSS-Code;
+            }   */
+
+        @media screen and (orientation: portrait){
+            body{
+                border: 5px solid rgb(255, 0, 255);
+            }
+        }
+        @media screen and (orientation: landscape){
+            body{
+                border: 5px solid rgb(0, 0, 0);
+            }
+        }
+        .boxes{
+            display: flex;
+        }
+
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hey I am a div and my body color is to-tai rang.
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
